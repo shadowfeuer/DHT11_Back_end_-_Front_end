@@ -1,5 +1,5 @@
 var sensorLib = require("node-dht-sensor");
-var express = require('express');
+//var express = require('express');
 
 var date_time = new Date();
 
@@ -18,7 +18,7 @@ var app = {
         this.sensors[sensor].pin
       );
       console.log(
-        `[${this.sensors[sensor].name}] ` + date_time +
+        `[${this.sensors[sensor].name}] ` + /*date_time +*/
           `temperature: ${readout.temperature.toFixed(1)}°C, ` +
           `humidity: ${readout.humidity.toFixed(1)}%`
       );
