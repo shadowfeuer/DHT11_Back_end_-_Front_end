@@ -18,11 +18,8 @@ var app = {
     
     setTimeout(function() {app.read();}, 2000);
   },
-  write: function() {
-    app.read();
-  }
     
 };
 
-app.write();
+app.read();
   
