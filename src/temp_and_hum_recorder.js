@@ -12,7 +12,6 @@ read: getData() {
       console.log(date_time +` temperature: ${data.temperature.toFixed(1)}°C, ` +`humidity: ${data.humidity.toFixed(1)}%`);
     }
 setTimeout(getData() {captor.read();}, 2000);
-}
 };
 
 captor.read();
