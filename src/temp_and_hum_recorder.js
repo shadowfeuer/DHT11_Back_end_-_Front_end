@@ -9,11 +9,6 @@ var app = {
       name: "Indoor",
       type: 11,
       pin: 17
-    },
-    {
-      name: "Outdoor",
-      type: 22,
-      pin: 4
     }
   ],
   read: function() {
