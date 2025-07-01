@@ -1,7 +1,7 @@
 var sensorLib = require("node-dht-sensor");
 //var express = require('express');
 
-var date_time = new Date();
+//var date_time = new Date();
 
 var app = {
   sensors: [
