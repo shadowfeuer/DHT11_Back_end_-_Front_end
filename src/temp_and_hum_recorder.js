@@ -13,13 +13,10 @@ var captor = {
         captor.type,
         captor.pin
       );
-      console.log(
-          date_time +
-          ` temperature: ${data.temperature.toFixed(1)}°C, ` +
-          `humidity: ${data.humidity.toFixed(1)}%`
-      );
+      console.log(date_time +` temperature: ${data.temperature.toFixed(1)}°C, ` +`humidity: ${data.humidity.toFixed(1)}%`);
     }
-    setTimeout(getData() {
+    
+setTimeout(getData() {
       captor.read();
     }, 2000);
   }
