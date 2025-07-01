@@ -12,11 +12,10 @@ var app = {
     }
   ],
   read: function() {
-    for (var sensor in this.sensors) {
-      var readout = sensorLib.read(this.sensors[sensor].type,this.sensors[sensor].pin);
-      
-      console.log(`[${this.sensors[sensor].name}] ` + date_time + `temperature: ${readout.temperature.toFixed(1)}°C, ` + `humidity: ${readout.humidity.toFixed(1)}%`);
-    }
+    var readout = sensorLib.read(this.sensors[0].type,this.sensors[0].pin);
+    
+    console.log(`[${this.sensors[0].name}] ` + date_time + `temperature: ${readout.temperature.toFixed(1)}°C, ` + `humidity: ${readout.humidity.toFixed(1)}%`);
+    
     setTimeout(function() {app.read();}, 2000);
   },
   write: function() {
