@@ -1,4 +1,7 @@
 var sensorLib = require("node-dht-sensor");
+var express = require('express');
+
+var date_time = new Date();
 
 var captor = {
     {
@@ -11,7 +14,8 @@ var captor = {
         captor.pin
       );
       console.log(
-          `temperature: ${data.temperature.toFixed(1)}°C, ` +
+          date_time +
+          ` temperature: ${data.temperature.toFixed(1)}°C, ` +
           `humidity: ${data.humidity.toFixed(1)}%`
       );
     }
@@ -21,4 +25,4 @@ var captor = {
   }
 };
 
-app.read();
+captor.read();
