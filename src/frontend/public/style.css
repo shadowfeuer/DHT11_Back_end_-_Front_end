@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #0b0c11 0%, #000000 100%);
+    min-height: 100vh;
+    color: #282828;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #732028;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #f5ccd0;
+}
+
+.columns {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    min-width: 500px;
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+}
+
+.column h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+    color: #4b5465;
+}
+
+.current-value, .average-value {
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 15px;
+    background: linear-gradient(135deg, #edf2f7 0%, #edf2f7 100%);
+    border-radius: 10px;
+}
+
+.current-value span, .average-value span {
+    font-size: 2em;
+    font-weight: bold;
+    color: #252d3a;
+}
+
+.history-table {
+    margin-bottom: 25px;
+}
+
+.history-table h3 {
+    margin-bottom: 15px;
+    color: #4b5565;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #f5f7fa;
+}
+
+th {
+    background: #4e586b;
+    color: white;
+    font-weight: 600;
+}
+
+tr:hover {
+    background-color: #f0f4f6;
+}
+
+.graph-container {
+    margin-top: 25px;
+}
+
+.graph-container h3 {
+    margin-bottom: 15px;
+    color: #424c5d;
+}
+
+canvas {
+    max-height: 300px;
+}
+
+@media (max-width: 768px) {
+    .columns {
+        flex-direction: column;
+    }
+    
+    .column {
+        min-width: auto;
+    }
+}

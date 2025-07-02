@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoring Capteurs IoT - Température et Humidité</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+
+<body>
+    <div class="container">
+        <h1>Monitoring des Capteurs IoT</h1>
+
+        <div class="error-message" id="errorMessage" style="display: none;"></div>
+
+        <div class="columns">
+
+            <div class="column">
+                <h2>Température</h2>
+
+
+                <div class="current-value">
+                    <h3>Temperature Actuelle</h3>
+                    <span id="currentTemp">--°C</span>
+                </div>
+
+
+                <div class="average-value">
+                    <h3>Moyenne (30 dernières valeurs)</h3>
+                    <span id="avgTemp">--°C</span>
+                </div>
+
+                <div class="history-table">
+                    <h3>Historique (30 dernières valeurs)</h3>
+                    <table id="tempTable">
+                        <thead>
+                            <tr>
+                                <th>Timestamp</th>
+                                <th>Température (°C)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="graph-container">
+                    <h3>Graphique Température</h3>
+                    <canvas id="tempGraph"></canvas>
+                </div>
+            </div>
+
+
+
+            <div class="column">
+                <h2>Humidité</h2>
+
+
+                <div class="current-value">
+                    <h3>Humidité Actuelle</h3>
+                    <span id="currentHum">--%</span>
+                </div>
+
+
+                <div class="average-value">
+                    <h3>Moyenne (30 dernières valeurs)</h3>
+                    <span id="avgHum">--%</span>
+                </div>
+
+                <div class="history-table">
+                    <h3>Historique (30 dernières valeurs)</h3>
+                    <table id="humTable">
+                        <thead>
+                            <tr>
+                                <th>Timestamp</th>
+                                <th>Humidité (%)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Les donnee ici... -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="graph-container">
+                    <h3>Graphique Humidité</h3>
+                    <canvas id="humGraph"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

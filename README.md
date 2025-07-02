@@ -2,4 +2,5 @@
 
 Librairie utilisées:
 - dht-node-sensor (Pour lire le capteur en JS)
-- express (Pour le timestamp)
+- express (Pour le timestamp et serveur)
+- CORS (Pour le serveur)

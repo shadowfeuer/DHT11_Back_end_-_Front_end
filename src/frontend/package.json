@@ -1,0 +1,12 @@
+{
+  "name": "iot-frontend",
+  "version": "1.0.0",
+  "description": "IoT Frontend for temperature and humidity display",
+  "main": "frontend-server.js",
+  "scripts": {
+    "start": "node frontend-server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.0"
+  }
+}
