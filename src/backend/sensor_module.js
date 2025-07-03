@@ -145,7 +145,7 @@ class SensorModule {
         }
         
         this.sensor = { type, pin, name };
-        console.log(`Sensor configured: ${name} (Type: ${type}, Pin: ${pin})`);
+        console.log(`Capteur configuré: ${name} (Type: ${type}, Pin: ${pin})`);
         return true;
     }
 }
