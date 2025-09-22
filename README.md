@@ -1,14 +1,11 @@
-# Labo_1_GTI_700
+# DHT11 Back-end & Front-end
 
+Laboratoire pour le Cours GTI700
 Équipe 5:
 
 - Chartier, Guyllaume; 
 - Djelloud, Mohamed-Amine; 
 - Kandiah Ariyanayagam, Thanushai.
-
-Lien:
-
-https://github.com/shadowfeuer/Labo_1_GTI_700_Equipe_5
 
 Dernier commit:
 
